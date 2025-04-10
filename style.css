@@ -215,53 +215,51 @@ img{
 @media (min-width: 768px) {
 
     /*Header*/
-    @media (min-width: 768px) {
-
-        .header__container {
-          display: grid;
-          grid-template-columns: 40rem 1fr;
-          gap: 2rem;
-          align-items: start;
-          position: relative;
-          padding-left: 3rem;
-        }
+    .header__container {
+      display: grid;
+      grid-template-columns: 40rem 1fr;
+      gap: 2rem;
+      align-items: start;
+      position: relative;
+      padding-left: 3rem;
+    }
+  
+    .header__profile {
+      position: absolute;
+      top: 0;
+      left: 3rem;
+      z-index: 5;
+    }
+  
+    .header__profile img {
+      max-width: 40rem;
+      aspect-ratio: 1 / 1;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 2px black;
+    }
+  
+    .header__section {
+      background-color: #FFF;
+      padding: 2rem;
+      box-shadow: 5px 5px 5px rgb(0 0 0 /.1);
+      grid-column: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    .header__section__icons {
+      display: flex;
+      align-self: flex-end;
+      gap: 2rem;
+    }
+  
+    .header::before {
+      top: -20rem;
+      transform: skewY(-8deg);
+    }
       
-        .header__profile {
-          position: absolute;
-          top: 0;
-          left: 3rem;
-          z-index: 5;
-        }
-      
-        .header__profile img {
-          max-width: 40rem;
-          aspect-ratio: 1 / 1;
-          height: auto;
-          border-radius: 50%;
-          box-shadow: 0 0 2px black;
-        }
-      
-        .header__section {
-          background-color: #FFF;
-          padding: 2rem;
-          box-shadow: 5px 5px 5px rgb(0 0 0 /.1);
-          grid-column: 2 / 3;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-        }
-      
-        .header__section__icons {
-          display: flex;
-          align-self: flex-end;
-          gap: 2rem;
-        }
-      
-        .header::before {
-          top: -20rem;
-          transform: skewY(-8deg);
-        }
-      }
       
     /*Main*/
     .main__grid{
